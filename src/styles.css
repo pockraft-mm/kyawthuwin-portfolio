@@ -122,7 +122,7 @@ h1, h2, h3, p, dd, a { overflow-wrap: anywhere; }
 .contact-details { max-width: 480px; margin: 0 0 28px; color: var(--muted-foreground); font-size: 14px; line-height: 1.7; }
 .contact-details a { display: inline-block; max-width: 100%; vertical-align: middle; padding-block: 10px; }
 .contact a:hover { color: var(--accent); }
-.contact-bottom { margin-top: 64px; padding-top: 18px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: 10px; }
+.contact-bottom { margin-top: 64px; padding-top: 18px; display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 24px; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: 10px; }
 .social-links { display: flex; flex-wrap: wrap; gap: 20px; }
 .social-links a { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; color: var(--accent); font-size: 11px; }
 

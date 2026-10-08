@@ -26,6 +26,7 @@ export function Contact({ name, contact }: ContactProps) {
             ))}
             {contact.cv ? <a href={contact.cv} download>Download CV <ArrowUpRight size={13} aria-hidden="true" /></a> : null}
           </div>
+          <span className="footer-credit">Craft by Pockraft</span>
           <span>© {new Date().getFullYear()}</span>
         </div>
       </div>
