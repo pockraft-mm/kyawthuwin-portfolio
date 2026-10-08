@@ -1,7 +1,7 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowDownToLine, ArrowUpRight } from 'lucide-react';
 import type { Portfolio } from '../data/portfolio';
 
-export function Hero({ profile }: { profile: Portfolio['profile'] }) {
+export function Hero({ profile, cv }: { profile: Portfolio['profile']; cv?: string }) {
   return (
     <section className="portfolio-hero section-border" aria-labelledby="hero-title" data-reveal>
       <div className="container hero-grid">
@@ -27,6 +27,11 @@ export function Hero({ profile }: { profile: Portfolio['profile'] }) {
               View My Work <ArrowUpRight size={14} aria-hidden="true" />
             </a>
             <a className="button button-outline" href="#contact">Contact</a>
+            {cv ? (
+              <a className="button button-outline" href={cv} download>
+                Download CV <ArrowDownToLine size={14} aria-hidden="true" />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

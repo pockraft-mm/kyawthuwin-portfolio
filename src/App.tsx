@@ -15,7 +15,7 @@ function App() {
       <div className="cursor-follower" aria-hidden="true"><span /></div>
       <Header name={portfolio.profile.name} />
       <main id="top">
-        <Hero profile={portfolio.profile} />
+        <Hero profile={portfolio.profile} cv={portfolio.contact.cv} />
         <SelectedWork projects={portfolio.projects} />
         <About about={portfolio.about} />
         <Skills skills={portfolio.skills} />

@@ -32,7 +32,10 @@ export function SelectedWork({ projects }: { projects: Project[] }) {
   return (
     <section className="work section-border" id="work" aria-labelledby="work-title" data-reveal>
       <div className="container">
-        <SectionHeading label="Selected Work" title="Recent projects" id="work-title" />
+        <div className="work-heading">
+          <SectionHeading label="Selected Work" title="Recent projects" id="work-title" />
+          <p className="work-count"><span>{String(projects.length).padStart(2, '0')}</span> academic projects</p>
+        </div>
         <div className="projects">
           {projects.map((project) => <ProjectCard project={project} key={project.title} />)}
         </div>
